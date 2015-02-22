@@ -3,11 +3,7 @@
 <head> 
 	<title>Pan 1</title> 
 
-	<script type="text/javascript" src="js/three.js">//this is the spacebrew library</script>
 	<script type="text/javascript" src="js/sb-1.4.1.js">//this is the spacebrew library</script>
-	<script type="text/javascript" src="js/MeshNormalMaterial.js">//this is the spacebrew library</script>
-	<script type="text/javascript" src="js/IcosahedronGeometry.js">//this is the spacebrew library</script>
-
 
 </head>
 <body>
@@ -36,7 +32,6 @@ function setupSpacebrew () {
 
 
 	sb.onBooleanMessage = onBooleanMessage; //override the blank function that is in the library with our own custom version
-	// sb.onRangeMessage = onRangeMessage; //override the blank function that is in the library with our own custom version
 	sb.onCustomMessage = onCustomMessage;
 
 	sb.connect(); //connect to the server
@@ -56,14 +51,6 @@ function onBooleanMessage (name, value) {
 	}
 }
 
-// function onRangeMessage (name, value) {
-
-// var valueS = value/1023;
-
-// myAudio.volume = valueS;
-// console.log("v:"+valueS);
-// }
-
 function onCustomMessage (name, value, type) {
 
 if (type == "vvolume"){
@@ -76,17 +63,7 @@ if (type == "vvolume"){
 	var myAudio = document.getElementById("sound");
 	myAudio.volume = v0/1023;
 }
-/*
-			if ( myID == p0){
-			myAudio.volume = json.p0.value;
-		} else if ( myID == p1){
-			myAudio.volume = json.p1.value;
-		} else if ( myID == p2){
-			myAudio.volume = json.p2.value;
-		} else if ( myID == p3){
-			myAudio.volume = json.p3.value;
-		}
-*/
+
 }
 	</script>
 

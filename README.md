@@ -2,6 +2,8 @@
 Master Volume Controller using spacebrew 
 By: Getarobo and David Cihelna
 
+Check out the video: https://vimeo.com/120815302
+
 A web application that allows a master user to control the playback and volume of HTML 5 audio on an unlimited number of clients. Runs using a standard Spacebrew node server.*
 
 *Get the server from here: https://github.com/Spacebrew/spacebrew
